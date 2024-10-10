@@ -1,0 +1,17 @@
+{
+  "name": "inm320sbb_hannahkim_cssprecompilers",
+  "version": "1.0.0",
+  "scripts": {
+    "goserver": "lite-server --baseDir=\"public\"",
+    "start": "concurrently \"npm run goserver\" \"npm run hannahis\"",
+    "hannahis": "sass --watch src/scss:public/assets/css"
+  },
+  "author": "Hannah Kim",
+  "license": "public",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.4"
+  }
+}
